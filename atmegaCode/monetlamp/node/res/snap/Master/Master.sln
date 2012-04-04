@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Basic Express 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Master", "Master.csproj", "{7C3563B5-6185-4131-9C6E-940CC0534F92}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C3563B5-6185-4131-9C6E-940CC0534F92}.Debug|Default.ActiveCfg = Debug|Any CPU
+		{7C3563B5-6185-4131-9C6E-940CC0534F92}.Debug|Default.Build.0 = Debug|Any CPU
+		{7C3563B5-6185-4131-9C6E-940CC0534F92}.Release|Default.ActiveCfg = Release|Any CPU
+		{7C3563B5-6185-4131-9C6E-940CC0534F92}.Release|Default.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

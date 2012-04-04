@@ -1,0 +1,150 @@
+# EESchema Netlist Version 1.1 created  20.1.2011 ã. 16:18:45
+(
+ ( /4D306233 AVR_ISP_CONNECTOR CONN1 AVR_ISP_3X2
+  ( 1 VCC )
+  ( 2 /MOSI )
+  ( 3 GND )
+  ( 4 /MISO )
+  ( 5 /SCK )
+  ( 6 /RESET )
+ )
+ ( /4D2EEB49 TQFP32 IC1 ATMEGA8A-A
+  ( 1 ? )
+  ( 2 ? )
+  ( 3 GND )
+  ( 4 ? )
+  ( 5 ? )
+  ( 6 VCC )
+  ( 7 ? )
+  ( 8 ? )
+  ( 9 ? )
+  ( 10 ? )
+  ( 11 ? )
+  ( 12 ? )
+  ( 13 N-000006 )
+  ( 14 ? )
+  ( 15 /MOSI )
+  ( 16 /MISO )
+  ( 17 /SCK )
+  ( 18 VCC )
+  ( 19 ? )
+  ( 20 ? )
+  ( 21 GND )
+  ( 22 ? )
+  ( 23 N-000017 )
+  ( 24 N-000030 )
+  ( 25 N-000019 )
+  ( 26 ? )
+  ( 27 ? )
+  ( 28 ? )
+  ( 29 /RESET )
+  ( 30 ? )
+  ( 31 ? )
+  ( 32 ? )
+ )
+ ( /4D3446D3 $noname$ P1 CONN_2
+  ( 1 VCC )
+  ( 2 /Led_Cathode )
+ )
+ ( /4D34452B sot89 Q1 2SK3065
+  ( D /Led_Cathode )
+  ( G /Drive )
+  ( S /Base_Source_Connection )
+ )
+ ( /4D344557 SOT23EBC Q2 BC817
+  ( 1 GND )
+  ( 2 /Base_Source_Connection )
+  ( 3 /Drive )
+ )
+ ( /4D2EF0EA SM1206 R1 10K
+  ( 1 VCC )
+  ( 2 /RESET )
+ )
+ ( /4D341C53 SM1206 R2 100R
+  ( 1 N-000003 )
+  ( 2 VCC )
+ )
+ ( /4D341CB4 SM1206 R3 100R
+  ( 1 GND )
+  ( 2 N-000027 )
+ )
+ ( /4D34459F SM1206 R4 1R8
+  ( 1 /Base_Source_Connection )
+  ( 2 GND )
+ )
+ ( /4D3445E9 SM1206 R5 5.1K
+  ( 1 /Drive )
+  ( 2 N-000006 )
+ )
+ ( /4D3843A3 FlexCable14Pin SMD CN1
+  ( 1 N-000004 )
+  ( 2 N-000040 )
+  ( 3 N-000029 )
+  ( 4 N-000039 )
+  ( 5 N-000028 )
+  ( 6 N-000038 )
+  ( 7 ? )
+  ( 8 ? )
+  ( 9 ? )
+  ( 10 ? )
+  ( 11 ? )
+  ( 12 ? )
+  ( 13 ? )
+  ( 14 ? )
+ )
+ ( /4D2EEBF8 SO14N U1 LM339
+  ( 2 N-000017 )
+  ( 3 N-000003 )
+  ( 6 N-000040 )
+  ( 7 N-000004 )
+  ( 8 N-000038 )
+  ( 9 N-000028 )
+  ( 10 N-000039 )
+  ( 11 N-000029 )
+  ( 12 N-000027 )
+  ( 13 N-000019 )
+  ( 14 N-000030 )
+ )
+)
+*
+{ Allowed footprints by component:
+$component IC1
+ TQFP32
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R4
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R5
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$endfootprintlist
+}

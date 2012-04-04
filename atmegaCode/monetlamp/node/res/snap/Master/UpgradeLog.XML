@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Master">
+</Property><Property Name="Projektmappendatei" Value="D:\Programme\WinAVR-20080610\Programme\snap\Master\Master.sln">
+</Property><Property Name="Date" Value="Montag, 20. Oktober 2008">
+</Property><Property Name="Time" Value="13:38">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Master.sln" Description="Die Projektmappe wurde erfolgreich konvertiert.">
+</Event><Event ErrorLevel="3" Project="" Source="Master.sln" Description="Converted">
+</Event></UpgradeLog>

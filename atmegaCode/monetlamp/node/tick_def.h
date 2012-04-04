@@ -1,0 +1,60 @@
+#ifndef __AVR_TICK_DEF
+#define __AVR_TICK_DEF
+
+#include "monetlamp.h"
+
+#if defined(ATMEGA8) //@16Mhz
+/**
+ * Setup here for megalamp (ATMega8a at 16Mhz processor timer0 at 1024 prescaler trying to keep it at once every 0.5ms)
+ *
+ */
+#define TS_INT_VECTOR TIMER0_OVF_vect
+#define TS_TIMER_CONTROL_REGISTER TCCR0
+#define TS_TIMER_COUNTER TCNT0
+#define TS_TIMER_PRESCALER	(_BV(CS02) | _BV(CS00))  //1024 prescaler
+#define TS_TIMER_INT_ENABLE() (TIMSK |= _BV( TOIE0 ))
+#define TS_TIMER_INT_DISABLE() (TIMSK &= ~_BV( TOIE0 ))
+#define TS_TIMER_START() (TS_TIMER_CONTROL_REGISTER = TS_TIMER_PRESCALER)
+#define TS_TIMER_STOP() (TS_TIMER_CONTROL_REGISTER = 0)
+
+/* @16Mhz */
+#define TS_TIMER_PHASE_ACCUMULATION (24)
+#define TS_TIMER_PHASE (8-1)
+#define TS_TIMER_PHASE_CORRECTED (7-1)
+
+/* @8Mhz */
+/*
+#define TS_TIMER_PHASE_ACCUMULATION (12)
+#define TS_TIMER_PHASE (4-1)
+#define TS_TIMER_PHASE_CORRECTED (3-1)
+*/
+
+#elif defined(ATMEGA328) //@20Mhz
+
+#define TS_INT_VECTOR TIMER0_OVF_vect
+#define TS_TIMER_CONTROL_REGISTER TCCR0B
+#define TS_TIMER_COUNTER TCNT0
+#define TS_TIMER_PRESCALER	(_BV(CS02) | _BV(CS00))  //1024 prescaler
+#define TS_TIMER_INT_ENABLE() (TIMSK0 |= _BV( TOIE0 ))
+#define TS_TIMER_INT_DISABLE() (TIMSK0 &= ~_BV( TOIE0 ))
+#define TS_TIMER_START() (TS_TIMER_CONTROL_REGISTER = TS_TIMER_PRESCALER)
+#define TS_TIMER_STOP() (TS_TIMER_CONTROL_REGISTER = 0)
+
+#define TS_TIMER_PHASE_ACCUMULATION (30)
+#define TS_TIMER_PHASE (10-1)
+#define TS_TIMER_PHASE_CORRECTED (9-1) 
+
+#else
+
+#error "NO TIMER DEFINITIONS"
+
+#endif
+
+
+#define TS_TIMER_LOAD_VALUE() \
+TS_TIMER_COUNTER = ( 255 - TS_TIMER_PHASE )
+
+#define TS_TIMER_LOAD_CORRECTED_VALUE() \
+TS_TIMER_COUNTER = ( 255 - TS_TIMER_PHASE_CORRECTED )
+
+#endif // __AVR_TICK_DEF

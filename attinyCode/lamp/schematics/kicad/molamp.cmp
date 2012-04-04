@@ -1,0 +1,87 @@
+Cmp-Mod V01 Created by CvPCB (2010-12-23 BZR 2684)-stable date = 20.1.2011 ã. 16:18:45
+
+BeginCmp
+TimeStamp = /4D306233;
+Reference = CONN1;
+ValeurCmp = AVR_ISP_3X2;
+IdModule  = AVR_ISP_CONNECTOR;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D2EEB49;
+Reference = IC1;
+ValeurCmp = ATMEGA8A-A;
+IdModule  = TQFP32;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D3446D3;
+Reference = P1;
+ValeurCmp = CONN_2;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D34452B;
+Reference = Q1;
+ValeurCmp = 2SK3065;
+IdModule  = sot89;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D344557;
+Reference = Q2;
+ValeurCmp = BC817;
+IdModule  = SOT23EBC;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D2EF0EA;
+Reference = R1;
+ValeurCmp = 10K;
+IdModule  = SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D341C53;
+Reference = R2;
+ValeurCmp = 100R;
+IdModule  = SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D341CB4;
+Reference = R3;
+ValeurCmp = 100R;
+IdModule  = SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D34459F;
+Reference = R4;
+ValeurCmp = 1R8;
+IdModule  = SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D3445E9;
+Reference = R5;
+ValeurCmp = 5.1K;
+IdModule  = SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D3843A3;
+Reference = SMD;
+ValeurCmp = CN1;
+IdModule  = FlexCable14Pin;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D2EEBF8;
+Reference = U1;
+ValeurCmp = LM339;
+IdModule  = SO14N;
+EndCmp
+
+EndListe

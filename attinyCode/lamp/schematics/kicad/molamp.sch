@@ -1,0 +1,377 @@
+EESchema Schematic File Version 2  date 20.1.2011 ã. 16:16:45
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:con-hdrs40
+LIBS:con-hirose
+LIBS:molamp-cache
+EELAYER 25  0
+EELAYER END
+$Descr A4 11700 8267
+Sheet 1 1
+Title ""
+Date "20 jan 2011"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L HDR-1X14-FH21-14 CN1
+U 1 1 4D3843A3
+P 6550 1550
+F 0 "CN1" H 6475 2250 50  0000 L BNN
+F 1 "HDR-1X14-FH21-14" H 6475 688 50  0000 L BNN
+F 2 "con-hdrs40-FH21-14" H 6550 1700 50  0001 C CNN
+	1    6550 1550
+	1    0    0    -1  
+$EndComp
+Connection ~ 9050 2150
+Wire Wire Line
+	9050 2500 9050 2150
+Wire Wire Line
+	9450 2350 9450 2750
+Wire Wire Line
+	8850 2350 8850 2150
+Wire Wire Line
+	9600 1750 9450 1750
+Wire Wire Line
+	9450 1750 9450 1550
+Wire Wire Line
+	9450 3250 9050 3250
+Wire Wire Line
+	9050 3250 9050 2900
+Wire Wire Line
+	1850 1100 4250 1100
+Connection ~ 3500 3200
+Wire Wire Line
+	8350 2350 5000 2350
+Wire Wire Line
+	5000 2350 5000 3200
+Wire Wire Line
+	5000 3200 3450 3200
+Wire Wire Line
+	6350 1450 4000 1450
+Wire Wire Line
+	4000 1450 4000 1500
+Wire Wire Line
+	6350 1250 2900 1250
+Wire Wire Line
+	2900 1250 2900 1500
+Wire Wire Line
+	2900 1500 2950 1500
+Wire Wire Line
+	6350 1050 1700 1050
+Wire Wire Line
+	1700 1050 1700 1500
+Wire Wire Line
+	1700 1500 1800 1500
+Wire Wire Line
+	4550 2200 4550 6350
+Wire Wire Line
+	1250 1100 1350 1100
+Wire Wire Line
+	6740 3640 5500 3640
+Wire Wire Line
+	5500 3640 5500 2700
+Wire Wire Line
+	7540 3540 7610 3540
+Wire Wire Line
+	7610 3540 7610 2550
+Wire Wire Line
+	7610 2550 5200 2550
+Wire Wire Line
+	5200 2550 5200 3400
+Wire Wire Line
+	5200 3400 3500 3400
+Wire Wire Line
+	3500 4000 4700 4000
+Wire Wire Line
+	4700 4000 4700 1400
+Wire Wire Line
+	3500 3800 3650 3800
+Wire Wire Line
+	3650 3800 3650 2000
+Wire Wire Line
+	3650 2000 2600 2000
+Wire Wire Line
+	2600 2000 2600 1400
+Wire Wire Line
+	2600 1400 2500 1400
+Connection ~ 950  3100
+Wire Wire Line
+	1600 3300 950  3300
+Wire Wire Line
+	950  3300 950  2800
+Connection ~ 3200 1700
+Connection ~ 3200 1100
+Connection ~ 1250 1100
+Wire Wire Line
+	1450 3100 1600 3100
+Wire Wire Line
+	1250 2800 1250 1050
+Connection ~ 1250 2800
+Connection ~ 2050 1100
+Connection ~ 4550 5700
+Connection ~ 4250 1700
+Wire Wire Line
+	1600 3500 950  3500
+Wire Wire Line
+	950  3500 950  5700
+Connection ~ 2450 5700
+Wire Wire Line
+	3650 1400 3800 1400
+Wire Wire Line
+	3800 1400 3800 3900
+Wire Wire Line
+	3800 3900 3500 3900
+Connection ~ 2550 2800
+Wire Wire Line
+	1600 3100 1600 2700
+Wire Wire Line
+	1600 2700 5500 2700
+Wire Wire Line
+	950  2800 7540 2800
+Wire Wire Line
+	7540 2800 7540 3440
+Wire Wire Line
+	950  5700 7540 5700
+Wire Wire Line
+	7540 5700 7540 3640
+Wire Wire Line
+	3500 3600 6630 3600
+Wire Wire Line
+	6630 3600 6630 3540
+Wire Wire Line
+	6630 3540 6740 3540
+Wire Wire Line
+	3500 3500 6740 3500
+Wire Wire Line
+	6740 3500 6740 3440
+Wire Wire Line
+	1800 1300 1800 950 
+Wire Wire Line
+	1800 950  6350 950 
+Wire Wire Line
+	2950 1300 2950 1150
+Wire Wire Line
+	2950 1150 6350 1150
+Wire Wire Line
+	4000 1300 4000 1350
+Wire Wire Line
+	4000 1350 6350 1350
+Wire Wire Line
+	9300 3250 9300 3350
+Connection ~ 9300 3250
+Connection ~ 4250 1100
+Connection ~ 2050 1700
+Wire Wire Line
+	2050 1700 4550 1700
+Wire Wire Line
+	9600 1950 9450 1950
+Wire Wire Line
+	8850 2150 9150 2150
+Wire Wire Line
+	9350 2700 9450 2700
+Connection ~ 9450 2700
+Text Label 9450 2500 0    60   ~ 0
+Base Source Connection
+Text Label 9450 1750 0    60   ~ 0
+Led Anode
+Text Label 9450 1950 0    60   ~ 0
+Led Cathode
+Text Label 8850 2150 0    60   ~ 0
+Drive
+$Comp
+L LM339 U1
+U 2 1 4D2EEBF8
+P 2150 1400
+F 0 "U1" H 2200 1600 60  0000 C CNN
+F 1 "LM339" H 2250 1200 50  0000 C CNN
+	2    2150 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR01
+U 1 1 4D344B8B
+P 9450 1550
+F 0 "#PWR01" H 9450 1650 30  0001 C CNN
+F 1 "VCC" H 9450 1650 30  0000 C CNN
+	1    9450 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P1
+U 1 1 4D3446D3
+P 9950 1850
+F 0 "P1" V 9900 1850 40  0000 C CNN
+F 1 "CONN_2" V 10000 1850 40  0000 C CNN
+	1    9950 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 4D3445E9
+P 8600 2350
+F 0 "R5" V 8680 2350 50  0000 C CNN
+F 1 "5.1K" V 8600 2350 50  0000 C CNN
+	1    8600 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 4D3445D1
+P 9300 3350
+F 0 "#PWR02" H 9300 3350 30  0001 C CNN
+F 1 "GND" H 9300 3280 30  0001 C CNN
+	1    9300 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 4D34459F
+P 9450 3000
+F 0 "R4" V 9530 3000 50  0000 C CNN
+F 1 "1R8" V 9450 3000 50  0000 C CNN
+	1    9450 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L NPN Q2
+U 1 1 4D344557
+P 9150 2700
+F 0 "Q2" H 9150 2550 50  0000 R CNN
+F 1 "BC817" H 9150 2850 50  0000 R CNN
+	1    9150 2700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L MOS_N Q1
+U 1 1 4D34452B
+P 9350 2150
+F 0 "Q1" H 9360 2320 60  0000 R CNN
+F 1 "2SK3065" H 9360 2000 60  0000 R CNN
+	1    9350 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 4D341CB4
+P 4550 1950
+F 0 "R3" V 4630 1950 50  0000 C CNN
+F 1 "100R" V 4550 1950 50  0000 C CNN
+	1    4550 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R2
+U 1 1 4D341C53
+P 1600 1100
+F 0 "R2" V 1680 1100 50  0000 C CNN
+F 1 "100R" V 1600 1100 50  0000 C CNN
+	1    1600 1100
+	0    1    1    0   
+$EndComp
+$Comp
+L AVR_ISP_3X2 CONN1
+U 1 1 4D306233
+P 7140 3590
+F 0 "CONN1" H 7140 3840 50  0000 C CNN
+F 1 "AVR_ISP_3X2" V 7140 3640 40  0000 C CNN
+	1    7140 3590
+	1    0    0    -1  
+$EndComp
+Text Label 5020 3600 0    60   ~ 0
+SCK
+Text Label 6170 3500 0    60   ~ 0
+MISO
+Text Label 6190 3640 0    60   ~ 0
+RESET
+Text Label 7610 2990 0    60   ~ 0
+MOSI
+$Comp
+L R R1
+U 1 1 4D2EF0EA
+P 1200 3100
+F 0 "R1" V 1280 3100 50  0000 C CNN
+F 1 "10K" V 1200 3100 50  0000 C CNN
+F 2 "1206" H 1200 3100 60  0001 C CNN
+	1    1200 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 4D2EF076
+P 4550 6350
+F 0 "#PWR03" H 4550 6350 30  0001 C CNN
+F 1 "GND" H 4550 6280 30  0001 C CNN
+	1    4550 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR04
+U 1 1 4D2EF06C
+P 1250 1050
+F 0 "#PWR04" H 1250 1150 30  0001 C CNN
+F 1 "VCC" H 1250 1150 30  0000 C CNN
+	1    1250 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM339 U1
+U 4 1 4D2EEC24
+P 4350 1400
+F 0 "U1" H 4400 1600 60  0000 C CNN
+F 1 "LM339" H 4450 1200 50  0000 C CNN
+	4    4350 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM339 U1
+U 3 1 4D2EEC1C
+P 3300 1400
+F 0 "U1" H 3350 1600 60  0000 C CNN
+F 1 "LM339" H 3400 1200 50  0000 C CNN
+	3    3300 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L ATMEGA8A-A IC1
+U 1 1 4D2EEB49
+P 2500 4100
+F 0 "IC1" H 1800 5250 50  0000 L BNN
+F 1 "ATMEGA8A-A" H 2800 2600 50  0000 L BNN
+F 2 "TQFP32" H 1950 2650 50  0001 C CNN
+	1    2500 4100
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

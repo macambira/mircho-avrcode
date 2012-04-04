@@ -1,0 +1,77 @@
+Initialize screen
+	0xFE 'I' <Mode>
+	
+	<Mode> can be one of the following
+	LCD_DISP_OFF   0x08 
+	LCD_DISP_ON   0x0C 
+	LCD_DISP_ON_BLINK   0x0D 
+	LCD_DISP_ON_CURSOR   0x0E 
+	LCD_DISP_ON_CURSOR_BLINK   0x0F 
+	
+	Example below will turn on the display with a cursor:
+	0xFE 0x49 0x0E
+	
+	Please note that this command can also be used to change the cursor.
+
+
+Command screen
+	0xFE 'C' <Command>
+	
+	<Command> can be one of the following
+	LCD_DISP_OFF   0x08 
+	LCD_DISP_ON   0x0C 
+	LCD_DISP_ON_BLINK   0x0D 
+	LCD_DISP_ON_CURSOR   0x0E 
+	LCD_DISP_ON_CURSOR_BLINK   0x0F 
+	
+	Example below will turn on the cursor:
+	0xFE 0x43 0x0E
+	
+	
+Erase the whole screen
+	<ASCII code>
+	
+	Example below will display a 'A' at cursor position:	
+	0x41
+
+
+Put char at cursor position
+	<ASCII code>
+	
+	Example below will display a 'A' at cursor position:	
+	0x41
+	
+	
+Goto position
+	0xFE 'G' <Column> <Row>
+	
+	Example below moves cursor to the second position on the 4th line:
+	0xFE 0x47 0x01 0x03
+
+
+Define custom character
+	0xFE 'D' <Char number> <Byte 0> <Byte 1> <Byte 2> <Byte 3> <Byte 4> <Byte 5> <Byte 6> <Byte 8>
+	<Char number> can be 1 to 8
+	
+	Example below creates a striped char at memory position 2:
+	0xFE 0x44 0x02 0x1F 0x00 0x1F 0x00 0x1F 0x00 0x1F 0x00
+
+
+Show custom character
+	<Char number>
+	
+	Example below will display custom char number 2 at cursor position:
+	0x02
+	
+Turn backlight ON or OFF
+	0xFE 'L' <Switch>
+	<Switch> can be '1' (ON) or '0' (OFF)
+	
+	Example below will turn on the backlight:
+	0xFE 0x52 0x31
+	
+Set servo position
+	0xFE 'S' <Position>
+	
+	Example below moves the servo to position 10:
+	0xFE 0x53 0x0A
